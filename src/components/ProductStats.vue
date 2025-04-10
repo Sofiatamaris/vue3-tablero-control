@@ -20,8 +20,7 @@
 </template>
 
 <script setup>
-  // Importa la función 'defineProps' de Vue para la tipificación de las propiedades.
-  import { defineProps } from 'vue';
+  
 
   // Define las props que este componente espera recibir del componente padre.
   const props = defineProps({
