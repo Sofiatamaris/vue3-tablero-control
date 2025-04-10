@@ -2,6 +2,8 @@
 
 Este proyecto es un tablero de control retail construido con Vue 3, Tailwind CSS y Vite. Permite a los usuarios visualizar estadísticas de productos, filtrar por categoría y precio, y navegar por una lista de productos paginada.
 
+![](https://github.com/Sofiatamaris/vue3-tablero-control/blob/main/src/assets/vue-panel-control.png)
+
 ## Cómo Ejecutar el Proyecto
 
 Sigue estos pasos para ejecutar el proyecto en tu entorno local:
