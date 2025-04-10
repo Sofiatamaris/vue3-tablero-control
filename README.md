@@ -34,14 +34,6 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 Durante el desarrollo de este tablero de control retail, se tomaron varias decisiones técnicas clave para asegurar la funcionalidad, el rendimiento y la mantenibilidad del proyecto:
 
-* **Vue 3:** Se eligió Vue 3 como el framework de JavaScript para la interfaz de usuario debido a su rendimiento mejorado, la Composition API que facilita la reutilización de lógica y la mejorada capacidad de tipado con TypeScript (aunque este proyecto se desarrolló principalmente con JavaScript y la Composition API).
-
-* **Vite:** Se utilizó Vite como el constructor de proyectos y servidor de desarrollo. Vite ofrece un tiempo de inicio extremadamente rápido gracias a su enfoque nativo de módulos ES y proporciona una excelente experiencia de desarrollo con carga instantánea en caliente (HMR).
-
-* **Tailwind CSS:** Se adoptó Tailwind CSS como la biblioteca de utilidades CSS. Tailwind permite un desarrollo rápido de la interfaz de usuario mediante la aplicación de clases predefinidas directamente en el HTML, lo que agiliza el proceso de estilado y asegura la consistencia visual.
-
-* **Composition API:** Dentro de Vue 3, se utilizó la Composition API para organizar la lógica de los componentes. Esta API permite agrupar la lógica relacionada en funciones reutilizables (composables), lo que mejora la legibilidad y la mantenibilidad del código, especialmente en componentes complejos como `HomeView.vue`.
-
 * **Componentización:** La interfaz de usuario se dividió en componentes reutilizables como `ProductCard`, `Pagination` y `ProductStats`. Esto promueve la modularidad, facilita la prueba y permite la reutilización de elementos en diferentes partes de la aplicación.
 
 * **Manejo de Estado Local con `ref` y `computed`:** Para la gestión del estado dentro de los componentes (como la lista de productos, la página actual y los filtros), se utilizaron las `refs` reactivas y las `computed properties` de Vue. Esto proporciona una forma clara y eficiente de manejar los datos y las dependencias dentro de cada componente.
@@ -50,12 +42,11 @@ Durante el desarrollo de este tablero de control retail, se tomaron varias decis
 
 * **Lazy Loading de Imágenes con `lazysizes`:** Para mejorar el rendimiento de carga inicial, se implementó la carga diferida de imágenes utilizando la biblioteca `lazysizes`. Esto retrasa la carga de las imágenes hasta que estén cerca de la vista del usuario.
 
-* **Persistencia de Filtros con `localStorage`:** Se decidió utilizar `localStorage` para guardar las preferencias de filtrado del usuario (categoría y rango de precios). Esto permite que las preferencias se mantengan incluso después de recargar la página, mejorando la experiencia del usuario.
+* **Persistencia de Filtros con `localStorage`:** Se uso `localStorage` para guardar las preferencias de filtrado del usuario (categoría y rango de precios). Esto permite que las preferencias se mantengan incluso después de recargar la página, mejorando la experiencia del usuario.
 
-* **Formato de Moneda Localizado:** Se implementó la función `toLocaleString` de JavaScript para formatear los precios en bolívares venezolanos (`es-VE`), considerando las convenciones locales para los separadores de miles y decimales.
+* **Formato de Moneda Localizado:** Se implementó la función `toLocaleString` de JavaScript para formatear los precios en bolívares venezolanos, considerando las convenciones locales para los separadores de miles y decimales.
 
 * **Diseño Responsivo con Tailwind CSS:** Se utilizaron los puntos de quiebre y las clases responsivas de Tailwind CSS para asegurar que la aplicación se adapte correctamente a diferentes tamaños de pantalla, incluyendo dispositivos móviles y de escritorio.
 
-* **Organización de Archivos:** Se adoptó una estructura de directorios clara y organizada (`assets`, `components`, `router`, `services`, `stores`, `views`, `utils`) para facilitar la navegación y el mantenimiento del código.
+* **Organización de Archivos:** Se adoptó una estructura de directorios clara y organizada (`assets`, `components`, `router`, `services`, `stores`, `views`) para facilitar la navegación y el mantenimiento del código.
 
-Estas decisiones técnicas se tomaron con el objetivo de crear una aplicación funcional, de alto rendimiento y fácil de mantener, proporcionando una buena experiencia tanto para el usuario final como para los desarrolladores.
