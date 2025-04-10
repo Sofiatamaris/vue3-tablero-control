@@ -6,7 +6,7 @@ Este proyecto es un tablero de control retail construido con Vue 3, Tailwind CSS
 
 Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-1.  **Clonar el repositorio (si aún no lo has hecho):**
+1.  **Clonar el repositorio:**
 
     ```bash
      git clone https://github.com/Sofiatamaris/vue3-tablero-control.git
@@ -32,7 +32,7 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 ## Decisiones Técnicas Relevantes
 
-Durante el desarrollo de este tablero de control retail, se tomaron varias decisiones técnicas clave para asegurar la funcionalidad, el rendimiento y la mantenibilidad del proyecto:
+Durante el desarrollo de este tablero de control retail, se tomaron varias decisiones técnicas clave para asegurar la funcionalidad y el rendimiento del proyecto:
 
 * **Componentización:** La interfaz de usuario se dividió en componentes reutilizables como `ProductCard`, `Pagination` y `ProductStats`. Esto promueve la modularidad, facilita la prueba y permite la reutilización de elementos en diferentes partes de la aplicación.
 
