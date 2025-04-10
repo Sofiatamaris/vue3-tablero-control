@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-4 m-4">
     <ProductStats
-      :totalProducts="areFiltersActive ? displayedProducts.length : products.length"
+      :totalProducts="areFiltersActive ? filteredProducts.length : products.length"
       :uniqueCategories="uniqueCategories"
       :averagePrice="averagePrice"
       :dolarRate="dolarRate"
@@ -175,16 +175,16 @@ const displayedProducts = computed(() => {
   return filteredProducts.value.slice(startIndex, endIndex);
 });
 
-// Propiedad computed para calcular el número de categorías únicas (basado en los productos mostrados o todos)
+// Propiedad computed para calcular el número de categorías únicas (basado en filtros o todos)
 const uniqueCategories = computed(() => {
-  const productsToConsider = areFiltersActive.value ? displayedProducts.value : products.value;
+  const productsToConsider = areFiltersActive.value ? filteredProducts.value : products.value;
   const categoriesSet = new Set(productsToConsider.map(product => product.category));
   return Array.from(categoriesSet).length;
 });
 
-// Propiedad computed para calcular el precio promedio de los productos (basado en los productos mostrados o todos)
+// Propiedad computed para calcular el precio promedio de los productos (basado en filtros o todos)
 const averagePrice = computed(() => {
-  const productsToConsider = areFiltersActive.value ? displayedProducts.value : products.value;
+  const productsToConsider = areFiltersActive.value ? filteredProducts.value : products.value;
   if (productsToConsider.length > 0) {
     const sum = productsToConsider.reduce((total, product) => total + product.price, 0);
     return sum / productsToConsider.length;
