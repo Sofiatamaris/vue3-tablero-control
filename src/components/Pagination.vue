@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmits } from 'vue';
+
 
 // Define las props que este componente espera recibir del componente padre
 const props = defineProps({
