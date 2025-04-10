@@ -9,8 +9,7 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 1.  **Clonar el repositorio (si aún no lo has hecho):**
 
     ```bash
-    git clone [URL_DEL_REPOSITORIO]
-    cd [NOMBRE_DEL_REPOSITORIO]
+     git clone https://github.com/Sofiatamaris/vue3-tablero-control.git
     ```
 
 2.  **Instalar las dependencias:**
